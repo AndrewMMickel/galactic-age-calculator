@@ -39,4 +39,33 @@ describe('AgePlanet', function() {
     expect (agePerson.lifeRemaining(merc)).toEqual('46');
     });
     
+    it('should return life remaining on Venus', function() {
+    const agePerson = new AgePlanet(36)
+    expect (agePerson.lifeRemaining(venus)).toEqual('69');
+    });
+
+    it('should return life remaining on Venus', function() {
+    const agePerson = new AgePlanet(90)
+    expect (agePerson.lifeRemaining(venus)).toEqual('18');
+    });
+
+    it('should return life remaining on Mars', function() {
+    const agePerson = new AgePlanet(36)
+    expect (agePerson.lifeRemaining(mars)).toEqual('23');
+    });
+
+    it('should return life remaining on Mars', function() {
+    const agePerson = new AgePlanet(90)
+    expect (agePerson.lifeRemaining(mars)).toEqual('6');
+    });
+
+    it('should return life remaining on Jupiter', function() {
+    const agePerson = new AgePlanet(36)
+    expect (agePerson.lifeRemaining(jupiter)).toEqual('4');
+    });
+
+    it('should return life remaining on Jupiter', function() {
+    const agePerson = new AgePlanet(90)
+    expect (agePerson.lifeRemaining(jupiter)).toEqual('1');
+    });
 });
