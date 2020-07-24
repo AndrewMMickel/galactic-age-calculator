@@ -20,6 +20,7 @@ _No known bugs. Will update with changes_
 
 ## Specs
 |Spec|Input|Output|
+|----|------|------|
 |Take a person's age on Earth and return corresponding age for Mercury|36|150|
 |Take a person's age on Earth and return corresponding age for Venus|36|58|
 |Take a person's age on Earth and return corresponding age for Mars|36|19|
