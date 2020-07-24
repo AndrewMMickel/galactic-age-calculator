@@ -6,6 +6,14 @@ const venus = .62;
 const mars = 1.88;
 const jupiter= 11.86;
 
+// test for calculating persons age from birthdate
+describe('AgePerson', function(){
+  it('should return age in years from birthdate', function() {
+    const ageYears = new AgePerson('February 13, 1962')
+    expect (ageYears.ageCalc()).toEqual(58);
+  });
+});
+
 //tests for calculating age on each planet
 describe('AgePlanet', function() {
     it('should return age on Mercury', function() {
