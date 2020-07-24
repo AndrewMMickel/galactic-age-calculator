@@ -25,3 +25,26 @@ export class AgePlanet {
     }
   }
 }
+
+export class AgePerson {
+  constructor(birthdate) {
+    this.birthdate = birthdate;
+    // determine age from birthdate
+  }
+  ageCalc() {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const dob = new Date(this.birthdate);
+    const birthYear = dob.getFullYear();
+    const birthMonth = dob.getMonth();
+    const birthDay = dob.getDay();
+    const currentBirthday = new Date(currentYear, birthMonth, birthDay);
+    const age = currentYear - birthYear;
+    if (currentBirthday > today) {
+      // have you had your birthday yet? no? then subtract a year
+      return age - 1;
+    } else {
+      return age;
+    }
+  }
+}
